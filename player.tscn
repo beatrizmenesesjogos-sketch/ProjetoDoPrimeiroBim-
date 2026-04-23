@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://6h8h6pglnr73"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sh265"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="player" type="Node2D" unique_id=1982338068]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=262832034]
+sprite_frames = SubResource("SpriteFrames_sh265")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1884962094]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=959792650]

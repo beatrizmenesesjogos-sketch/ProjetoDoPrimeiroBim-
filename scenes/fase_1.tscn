@@ -2,16 +2,32 @@
 
 [ext_resource type="PackedScene" uid="uid://bkdfuixvvqfgv" path="res://scenes/TileMap.tscn" id="1_ugoy3"]
 [ext_resource type="PackedScene" uid="uid://dk7kc7xegwcu3" path="res://scenes/player.tscn" id="2_u5pyp"]
-[ext_resource type="PackedScene" uid="uid://crjjhl1uyo7g2" path="res://inimigo.tscn" id="3_u5pyp"]
+[ext_resource type="PackedScene" uid="uid://crjjhl1uyo7g2" path="res://scenes/inimigo.tscn" id="3_u5pyp"]
+[ext_resource type="PackedScene" uid="uid://bndjj6wlnch23" path="res://node_2d.tscn" id="4_u7fro"]
 
 [node name="Fase1" type="Node2D" unique_id=806038245]
 position = Vector2(-2, -2)
 
-[node name="Node2D" parent="." unique_id=1606503868 instance=ExtResource("1_ugoy3")]
-position = Vector2(-17, -19)
+[node name="cenário" parent="." unique_id=1606503868 instance=ExtResource("1_ugoy3")]
+position = Vector2(3, 9)
 
 [node name="Player" parent="." unique_id=2014270405 instance=ExtResource("2_u5pyp")]
 position = Vector2(253, 379)
 
 [node name="inimigo" parent="." unique_id=1494309079 instance=ExtResource("3_u5pyp")]
 position = Vector2(317, 474)
+
+[node name="Node2D" parent="." unique_id=201287710 instance=ExtResource("4_u7fro")]
+visibility_layer = 1024
+z_index = -8
+position = Vector2(-9, 91)
+
+[node name="Node2D2" parent="." unique_id=2131465722 instance=ExtResource("4_u7fro")]
+visibility_layer = 1024
+z_index = -8
+position = Vector2(-1164, 91)
+
+[node name="Node2D3" parent="." unique_id=1357406081 instance=ExtResource("4_u7fro")]
+visibility_layer = 1024
+z_index = -8
+position = Vector2(1154, 88)

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://crjjhl1uyo7g2"]
 
-[ext_resource type="Script" uid="uid://ceydv50ph2wik" path="res://inimigo.gd" id="1_0b8xr"]
+[ext_resource type="Script" uid="uid://ceydv50ph2wik" path="res://scenes/inimigo.gd" id="1_0b8xr"]
 [ext_resource type="Texture2D" uid="uid://cs31ahwbbkiub" path="res://assets/Plataform Cute/Enemies/Sheet/Squeletron2-Sheet.png" id="1_030df"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0b8xr"]
